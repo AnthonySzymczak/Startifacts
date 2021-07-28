@@ -20,6 +20,7 @@
     "nodemon": "^2.0.3"
   },
   "dependencies": {
+    "bulma": "^0.9.3",
     "dotenv": "^8.6.0",
     "express": "^4.17.1",
     "mysql": "^2.18.1",
