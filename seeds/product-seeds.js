@@ -95,3 +95,6 @@ const productData = [
         category_id: 2,
     },
 ];
+const seedProducts = () => Product.bulkCreate(productData);
+
+module.exports = seedProducts;

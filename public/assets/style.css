@@ -1,0 +1,28 @@
+:root {
+    --primary: 
+    --secondary: 
+    --tertiary: 
+    --quarternary:
+    --quinary:  
+    --border-radius: .3rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 640px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
+}
