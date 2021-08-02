@@ -38,7 +38,7 @@ const productData = [
         stock: 22,
         category_id: 5,
     },
-    {   image: "./assets/images/
+    {   image: "./assets/images/st-voy-shirt.jpg",
         product_name: 'Star Trek Voyager Uniform Shirt',
         price: 79.99,
         stock: 38,
