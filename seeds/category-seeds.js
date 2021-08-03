@@ -1,5 +1,3 @@
-const seedProducts = () => Product.bulkCreate(productData);
-
 module.exports = seedProducts;
 
 const { Category } = require('../models');
