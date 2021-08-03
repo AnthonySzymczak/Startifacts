@@ -1,5 +1,3 @@
-module.exports = seedProducts;
-
 const { Category } = require('../models');
 
 const categoryData = [
