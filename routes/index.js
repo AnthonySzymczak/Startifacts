@@ -1,5 +1,6 @@
+
 const { model } = require("../config/connection");
-const apiroutes = require ("./api");
+//const apiroutes = require ("./api");
 
 const router = require("express").Router();
 const categoryRoutes = require('./api/category-routes');
