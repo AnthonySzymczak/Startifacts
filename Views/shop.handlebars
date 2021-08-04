@@ -6,20 +6,15 @@
     <p class="card-header-title">
       {{product_name}}
     </p>
-    <button class="card-header-icon" aria-label="more options">
-      <span class="icon">
-        <i class="fas fa-angle-down" aria-hidden="true"></i>
-      </span>
-    </button>
   </header>
   <div class="card-content">
     <div class="content">
         <figure class="image is-128x128">
-         <img src={{ $image }}>
+         <img src={{ image }}>
         </figure>
         <br>
-        {{product_name}}
-        {{price}}
+        <p>{{ product_name }}</p>
+        {{ price }}
       
       <br>
     </div>
