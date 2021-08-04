@@ -1,6 +1,6 @@
 
 
-{{#each .}}
+{{#each products}}
 <div class="card">
   <header class="card-header">
     <p class="card-header-title">
@@ -14,7 +14,7 @@
         </figure>
         <br>
         <p>{{ product_name }}</p>
-        {{ price }}
+        <p>${{ price }}.00 </p>
       
       <br>
     </div>
