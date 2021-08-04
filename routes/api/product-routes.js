@@ -16,6 +16,7 @@ router.get('/', (req, res) => {
       model: Category,
       attributes: ['id', 'category_name']
     },
+    res.render('shop'),
     {
       model: Tag,
       through: ProductTag,

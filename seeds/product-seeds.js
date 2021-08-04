@@ -14,7 +14,7 @@ const productData = [
         stock: 15,
         category_id: 6,
     },
-    {   image: "./assets/images/bsg-model.jpg",
+    {   image: "../assets/images/bsg-model.jpg",
         product_name: 'BSG Galactica Model',
         price: 59.99,
         stock: 25,
