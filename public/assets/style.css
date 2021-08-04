@@ -7,36 +7,24 @@
     box-sizing: border-box;
 }
 
-#navbarMenuHeroA {
+#navbar {
     flex-wrap: wrap;
 
 
 
 }
 
-    
-    .bg-img { 
-        background-image: url("/images/homepage-background.jpg") ;
-        background-position: center;
-        background-repeat:  no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
- 
-}
-
 main{
 background-color: transparent;
 }
 
-div.hero-body {
-align-content: center;
 
-}
-
-body {
-
-    background-color: black;
-
+.landing-image {
+    background-image: url("../assets/images/homepage-background.jpg") ;
+    background-position: center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 html, input, textarea {

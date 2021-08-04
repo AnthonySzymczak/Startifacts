@@ -6,11 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Startifacts</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="/assets/style.css">
     <script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
 </head>
 
+
 <body>
-{{{body}}}
+    <section class="hero is-small is-dark">
+        <!-- Hero head: will stick at the top -->
+        <header>
+            <nav class="navbar small light bg-dark">
+                <h1>
+                    <p class="title"><i>sci-fi, anime and fantasy collectibles</i></p>
+                </h1>
+                <div id="navbarMenuHeroA" class="navbar-menu">
+                    <div class="navbar-end">
+                        {{#if loggedIn}}
+                        <a href="/" class="homepage">
+                            Homebase
+                        </a>
+                        <a class="navbar-item">
+                            Boldly Go!
+                        </a>
+                        <a href="/dashboard">Area 51:Saved Items</a>
+                        <button id="logout" class="btn-no-style">Logout</button>
+                        {{else}}
+                        <a href="/" class="homepage">Homebase</a>
+                        <a class="navbar-item">Login</a>
+                        {{/if}}
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+
+    {{{body}}}
 
     <div class="footer">
         footer
