@@ -6,20 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Startifacts</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="/assets/style.css">
     <script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
 </head>
 
-<body>
-{{{body}}}
 
-    <div class="footer">
-        footer
-        <figure class="image is-128x128">
-            <img src="../assets/images/pangolins.jpg">
-        </figure>
-    </div>
+<body>
+    <header>
+        <section class="hero is-small is-dark">
+            <!-- Hero head: will stick at the top -->
+            <header>
+                <nav class="navbar" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand">
+                        <img src="../assets/images/start-banner.jpg" width="320" height="30">
+                        <h1>
+                            <p class="title"><i>sci-fi, anime & fantasy items</i></p>
+                        </h1>
+                        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                            data-target="navbarBasicExample">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+
+                    <div id="navbarMenuHeroA" class=" navbar-menu">
+                        <div class="navbar-brand"></div>
+                        {{#if loggedIn}}
+                        <a href="/" div class="navbar-start homepage">
+                            <a class="navbar-item">
+                                Homebase
+                            </a>
+                            <a class="navbar-item">
+                                Boldly Go!
+                            </a>
+
+                            <a class="navbar-item">
+                                Area 51:Saved Items
+                            </a>
+                            <div class="navbar-end">
+                                <div class="navbar-item">
+                                    <div class="buttons">
+                                        <a class="button is-light">
+                                            Log out
+                                        </a>
+                                    </div>
+                                    {{else}}
+                                    <a href="/" class="homepage">Homebase</a>
+                                    <a class="navbar-item">
+                                        Boldly Go!
+                                    </a>
+                                    <div class="navbar-end">
+                                        <div class="navbar-item">
+                                            <div class="buttons">
+
+                                                <a class="button is-light">
+                                                    Log in
+                                                </a>
+                                                <a class="button is-light">
+                                                    Sign up
+                                                </a>
+                                                {{/if}}
+                                            </div>
+                                        </div>
+                                    </div>
+                </nav>
+        </section>
+    </header>
+
+
+    {{{body}}}
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>Brought to you by Group 1 "Pangolins": Anthony Szymczak, Austin Swebilius, Shaeon Adams, Manny Alfaro</p>
+
+        </div>
+        <img class="pangolins" src="../assets/images/pangolins.jpg">
+    </footer>
 
 </body>
-
 
 </html>
