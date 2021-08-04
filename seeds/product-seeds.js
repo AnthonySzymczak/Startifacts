@@ -1,10 +1,11 @@
+const { url } = require('inspector');
 const { Product } = require('../models');
 
 const productData = [
     {
         image: "./assets/images/st-tos-phaser.jpg",
         product_name: 'Star Trek TOS Phaser',
-        price: 75.99,
+        price: 74.99,
         stock: 14,
         category_id: 1,
     },
@@ -14,7 +15,7 @@ const productData = [
         stock: 15,
         category_id: 6,
     },
-    {   image: "./assets/images/bsg-model.jpg",
+    {   image: "../assets/images/bsg-model.jpg",
         product_name: 'BSG Galactica Model',
         price: 59.99,
         stock: 25,
