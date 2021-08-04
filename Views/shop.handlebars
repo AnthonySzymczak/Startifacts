@@ -1,10 +1,10 @@
 
 
-{{#each}}
+{{#each .}}
 <div class="card">
   <header class="card-header">
     <p class="card-header-title">
-      {{ product_name }}
+      {{product_name}}
     </p>
     <button class="card-header-icon" aria-label="more options">
       <span class="icon">
@@ -14,10 +14,12 @@
   </header>
   <div class="card-content">
     <div class="content">
-        {{ image }}
+        <figure class="image is-128x128">
+         <img src={{ $image }}>
+        </figure>
         <br>
-        {{ product_name }}
-        {{ price }}
+        {{product_name}}
+        {{price}}
       
       <br>
     </div>
