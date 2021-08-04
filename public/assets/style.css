@@ -221,3 +221,5 @@ footer {
     background-color: black;
 }
 
+/* Disable the fullhead breakpoint */
+/* $fullhd-enabled: false*/
