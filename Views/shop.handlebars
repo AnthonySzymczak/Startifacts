@@ -1,0 +1,55 @@
+
+{{#each .}}
+<div class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      {{product_name}}
+    </p>
+    <button class="card-header-icon" aria-label="more options">
+      <span class="icon">
+        <i class="fas fa-angle-down" aria-hidden="true"></i>
+      </span>
+    </button>
+  </header>
+  <div class="card-content">
+    <div class="content">
+        <figure class="image is-128x128">
+         <img src={{ $image }}>
+        </figure>
+        <br>
+        {{product_name}}
+        {{price}}
+      
+      <br>
+    </div>
+  </div>
+  <footer class="card-footer">
+    <a href="#" class="card-footer-item">Save</a>
+    <a href="#" class="card-footer-item">Buy now</a>
+
+  </footer>
+</div>
+
+{{/each}}
+
+
+
+
+
+
+
+{{! replace all ]] with ->}}
+{{!
+{{#each data]]
+<article class="card card_list-view card_list-view--regular">
+<picture class="card-image">
+    <img src="{{root]]/assets/img/{{this.img]]" alt="picture should be here">
+</picture>
+<section class="card-section">
+    <header>
+        <h3><a href="{{this.url]]">{{this.title]]        </a></h3>
+    </header>
+</section>
+</article>
+{{/each]]
+}}
