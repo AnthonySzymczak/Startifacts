@@ -7,13 +7,6 @@
     box-sizing: border-box;
 }
 
-#navbar {
-    flex-wrap: wrap;
-
-
-
-}
-
 main{
 background-color: transparent;
 }
@@ -72,10 +65,10 @@ a:hover {
 }
 
 button {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     border: 0;
     padding: 1%;
-    color: white;
+    color: lightgray;
     font-weight: bold;
     transition: background-color .1s;
     cursor: pointer;
@@ -172,6 +165,10 @@ main {
     background-color: #d39889;
 }
 
+.title { 
+color: white ;
+}
+
 .post {
     margin-bottom: 2%;
     line-height: 150%;
@@ -180,7 +177,7 @@ main {
 .post .title span {
     font-style: italic;
     font-size: 90%;
-    color: #7d7d7d;
+    color: white ;
 }
 
 .edit-link {
@@ -221,6 +218,7 @@ footer {
     justify-content: center;
     padding: 1%;
     font-size: 110%;
+    background-color: black;
 }
 
 /* Disable the fullhead breakpoint */
