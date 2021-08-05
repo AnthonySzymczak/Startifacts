@@ -1,7 +1,7 @@
 {
   "name": "startifacts",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Table of Contents",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/AnthonySzymczak/Startifacts.git"
+    "url": "git+https://github.com/AnthonySzymczak/Startifacts.git"
   },
   "keywords": [],
   "author": "Anthony Szymczak, and the other guys",
@@ -32,5 +32,9 @@
     "mysql2": "^2.2.5",
     "node": "^16.6.1",
     "sequelize": "^5.22.4"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/AnthonySzymczak/Startifacts/issues"
+  },
+  "homepage": "https://github.com/AnthonySzymczak/Startifacts#readme"
 }
