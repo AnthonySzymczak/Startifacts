@@ -28,6 +28,10 @@ html, input, textarea {
     background-color: black;
 }
 
+input {
+    color: white;
+}
+
 a {
     text-decoration: none;
     color: var(--primary-color);
