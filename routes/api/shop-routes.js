@@ -4,7 +4,7 @@ const { Product, Category, Tag, ProductTag} = require('../../models');
 //get shop cards
 router.get('/', (req, res) => {
     Product.findAll({
-        attributes: ['id', 'product_name', 'price', 'stock', 'category_id'],
+        attributes: ['id','product_image', 'product_name', 'price', 'stock', 'category_id'],
         include: [{
           model: Category,
           attributes: ['id', 'category_name']
