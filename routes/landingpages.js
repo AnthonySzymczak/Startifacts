@@ -11,6 +11,7 @@ router.get('/login', function (req,res){
 router.get('/signup', function (req, res){
   res.render('signup')
 })
+
   
   /*
   app.get('/', function (req, res) {
