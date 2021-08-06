@@ -20,10 +20,10 @@
 const router = require("express").Router();
 
 const apiRoutes = require('./api');
-const indexRoutes = require('./index-routes')
 const loginRoutes = require('./login-routes')
 const signupRoutes = require('./signup-routes')
 const shopRoutes = require('./shop-routes')
+const indexRoutes = require('./index-routes')
 
 
 router.use('/api', apiRoutes);
