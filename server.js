@@ -2,14 +2,14 @@ const express = require("express");
 const routes = require("./routes/");
 const sequelize = require("./config/connection");
 const path = require("path");
-const exphbs = require("express-handlebars");
-const hbs = exphbs.create();
-
 const app = express();
 const PORT = process.env.PORT || 3001;
-require("dotenv").config();
+const exphbs = require("express-handlebars");
 const session = require("express-session");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
+const hbs = exphbs.create();
+
+require("dotenv").config();
 const sess = {
   secret: process.env.SERVER_SECRET,
   cookie: {},
@@ -32,7 +32,5 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => {
-    console.log(`App listening on port ${PORT}!`);
-  });
+  app.listen(PORT, () => console.log('Now listening'));
 });
