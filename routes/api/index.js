@@ -1,13 +1,15 @@
-/*
 const router = require('express').Router();
-const categoryRoutes = require('./category-routes');
-const productRoutes = require('./product-routes');
-const tagRoutes = require('./tag-routes');
-// router.use('/api', apiroutes);
-const landingpages = require('../landingpages')
-router.use('/', landingpages);
-router.use('/categories', categoryRoutes);
-router.use('/products', productRoutes);
-router.use('/tags', tagRoutes);
+
+const categoryRoutes = require('./category-routes')
+const productRoutes = require('./product-routes')
+const shopRoutes = require('./shop-routes')
+const tagRoutes = require('./tag-routes')
+const userRoutes = require('./user-routes')
+
+router.use('/categories', categoryRoutes)
+router.use('/product', productRoutes)
+router.use('/shop', shopRoutes)
+router.use('/tags', tagRoutes)
+router.use('/user', userRoutes)
+
 module.exports = router;
-*/
