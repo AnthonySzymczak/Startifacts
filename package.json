@@ -37,5 +37,8 @@
   "bugs": {
     "url": "https://github.com/AnthonySzymczak/Startifacts/issues"
   },
-  "homepage": "https://github.com/AnthonySzymczak/Startifacts#readme"
+  "homepage": "https://github.com/AnthonySzymczak/Startifacts#readme",
+  "optionalDependencies": {
+    "fsevents": "^2.3.2"
+  }
 }
