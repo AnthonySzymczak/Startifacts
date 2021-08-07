@@ -3,6 +3,10 @@ const { Product, Category, Tag, ProductTag} = require('../models');
 
 //get shop cards
 router.get('/', (req, res) => {
+  console.log(req.session)
+  // if (req.session) 
+  console.log(req.session.loggedIn)
+
     Product.findAll({
         attributes: ['id','product_image', 'product_name', 'price', 'stock', 'category_id'],
         include: [{
@@ -19,9 +23,14 @@ router.get('/', (req, res) => {
     .then(dbProducts => {
       const products = dbProducts.map(product => product.get({ plain: true }));
     
-      res.render('shop', { products });
+      if(req.session.loggedIn)
+      res.render('shop', { products, loggedIn: true });
+      else
+      res.render('shop', {products})
     });
   });
+
+
 
   module.exports = router;
   

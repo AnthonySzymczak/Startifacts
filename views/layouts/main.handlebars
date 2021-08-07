@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <div class="wrapper">
         <header>
             <section class="hero is-small is-dark">
                 <!-- Hero head: will stick at the top -->
@@ -25,73 +26,55 @@
                             <h1>
                                 <p class="title"><i>sci-fi, anime & fantasy items</i></p>
                             </h1>
-                            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
-                                data-target="navbarBasicExample">
-                                <span aria-hidden="true"></span>
-                                <span aria-hidden="true"></span>
-                                <span aria-hidden="true"></span>
                             </a>
                         </div>
 
-                        <div id="navbarMenuHeroA" class=" navbar-menu">
-                            <div class="navbar-brand"></div>
-                            {{#if loggedIn}}
-                            <a href="/" div class="navbar-start homepage">
-                                <a class="navbar-item">
-                                    Homebase
-                                </a>
-                                
-                                <a class="navbar-item">
-                                    Boldly Go!
-                                </a>
+                        {{#if loggedIn}}
+                        <a href="/index" class="navbar-item">Homebase</a>
+                        <a href="/shop" class="navbar-item">Boldly Go!</a>
+                        <a href="/dashboard" class="navbar-item">Area 51:Saved Items</a>
 
-                                <a class="navbar-item">
-                                    Area 51:Saved Items
-                                </a>
-                                <div class="navbar-end">
-                                    <div class="navbar-item">
-                                        <div class="buttons">
-                                            <a class="button is-light">
-                                                Log out
-                                            </a>
-                                        </div>
-                                        {{else}}
-                                        <a href="/" class="homepage">Homebase</a>
-                                        <a href="/shop" class="navbar-item">
-                                            Boldly Go!
+                        <div class="navbar-item">
+                            <div class="buttons">
+                                <a class="button is-light" id="logout-button">Log out</a>
+                            </div>
+                            <script src="/assets/javascript/logout.js"></script>
+                            {{else}}
+                            <a href="/index" class="navbar-item">Homebase</a>
+                            <a href="/shop" class="navbar-item">Boldly Go!</a>
+                            <div class="navbar-end">
+                                <div class="navbar-item">
+                                    <div class="buttons">
+
+                                        <a href="/login" class="button is-light">
+                                            Log in
                                         </a>
-                                        <div class="navbar-end">
-                                            <div class="navbar-item">
-                                                <div class="buttons">
-
-                                                    <a href="/login" class="button is-light">
-                                                        Log in
-                                                    </a>
-                                                    <a href="/signup" class="button is-light">
-                                                        Sign up
-                                                    </a>
-                                                    {{/if}}
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <a href="/signup" class="button is-light">
+                                            Sign up
+                                        </a>
+                                        {{/if}}
                                     </div>
                                 </div>
-                            </a>
-                    </nav>
-            </section>
-        </header>
-    {{{body}}}
+                            </div>
+                        </div>
+    </div>
 
-        <footer class="footer has-background-black has-text-primary-light">
-            <div class="content has-text-centered is-size-7">
-                <p>Brought to you by: Anthony Szymczak, Austin Swebilius, Shaeon Adams, Manny Alfaro
-                </p>
+    </nav>
+    </section>
+    </header>
+    <div class="content-wrap">
+        {{{body}}}
+    </div>
+    <footer class="footer has-background-black has-text-primary-light">
+        <div class="content has-text-centered is-size-7">
+            <p>Brought to you by: Anthony Szymczak, Austin Swebilius, Shaeon Adams, Manny Alfaro
+            </p>
         </div>
         <figure class="image is-64x64">
-        <img src="/assets/images/pangolins-noire.jpg" alt="image goes here"/>
+            <img src="/assets/images/pangolins-noire.jpg" alt="image goes here" />
         </figure>
     </footer>
-
+    </div>
 </body>
 
 </html>

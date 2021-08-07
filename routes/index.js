@@ -24,12 +24,14 @@ const loginRoutes = require('./login-routes')
 const signupRoutes = require('./signup-routes')
 const shopRoutes = require('./shop-routes')
 const indexRoutes = require('./index-routes')
+const dashboardRoutes = require('./dashboard-routes')
 
 
 router.use('/api', apiRoutes);
 router.use('/signup', signupRoutes) 
 router.use('/login', loginRoutes) 
 router.use('/shop', shopRoutes)
+router.use('/dashboard', dashboardRoutes)
 router.use('/', indexRoutes);
 
 module.exports = router;

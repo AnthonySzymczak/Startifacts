@@ -6,14 +6,55 @@
 * {
     box-sizing: border-box;
 }
+.wrapper {
+    position: relative;
+min-height: 100vh;
+min-width: 100vw;
+}
 
 main{
 background-color: transparent;
 }
 
+#content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+}
+
 
 .landing-image {
     background-image: url("../assets/images/homepage-background.jpg") ;
+    background-position: center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.login-image {
+    background-image: url("../assets/images/astro-welcome.jpg") ;
+    background-position: center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.shop-image {
+    background-image: url("../assets/images/star-background.jpg") ;
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.dashboard-image {
+    background-image: url("../assets/images/moonscape.jpg") ;
+    background-position: center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+} 
+
+.signup-image {
+    background-image: url("../assets/images/alien-login.jpg") ;
     background-position: center;
     background-repeat:  no-repeat;
     background-attachment: fixed;
@@ -27,6 +68,8 @@ html, input, textarea {
     font-family: "Arial";
     background-color: black;
 }
+
+
 
 input {
     color: white;
@@ -217,10 +260,13 @@ color: white ;
 }
 
 footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
     border-top: 1px solid black;
     display: flex;
     justify-content: center;
     padding: 1%;
     font-size: 110%;
-    height: 3vh;
+    height: 2.5rem;
 }

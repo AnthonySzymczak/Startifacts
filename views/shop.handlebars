@@ -1,25 +1,27 @@
 
-{{#each products}}
-<div class="columns is-centered is-multiline">
-  <div class="column is-mobile is-one-quarter">
-    <div class="card">
-      <header class="card-header">
-        <p class="card-header-title">
-          {{product_name}}
-        </p>
-      </header>
-      <div class="card-content ">
-        <div class="content">
-          <figure class="image is-128x128 has-ratio">
-            <img src="/assets/images/{{product_image}}" alt="IMAGES HERE PLOX" />
-          </figure>
-          <br>
-          <p>{{ product_name }}</p>
-          <p>${{ price }}.00 </p>
+  <div class="hero is-large shop-image">
+  {{#each products}}
+  <div class="columns is-centered is-multiline">
+    <div class="column is-mobile is-one-quarter">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">
+            {{product_name}}
+          </p>
+        </header>
+        <div class="card-content ">
+          <div class="content">
+            <figure class="image is-128x128 has-ratio">
+              <img src="/assets/images/{{product_image}}" alt="IMAGES HERE PLOX" />
+            </figure>
+            <br>
+            <p>{{ product_name }}</p>
+            <p>${{ price }}.00 </p>
 
-          <br>
+            <br>
+          </div>
         </div>
-      </div>
+    
       <footer class="card-footer">
         <a href="#" class="card-footer-item">Save</a>
         <a href="#" class="card-footer-item">Buy now</a>
@@ -30,3 +32,4 @@
 </div>
 
 {{/each}}
+</div>
