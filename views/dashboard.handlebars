@@ -1,6 +1,6 @@
 <!-- Hero content: will be in the top middle -->
 
-<section class="hero is-large dashboard-image" style= "height: 80vh">
+<section class="hero is-large dashboard-image" style="height: 80vh">
     <div class="hero-body">
         <div class="container has-text-centered">
             <img href="https://fontmeme.com/for-all-mankind-font/"><img
@@ -8,6 +8,35 @@
                 alt="for-all-mankind-font" border="0">
             <div class="title">
             </div>
+            {{#if products}}
+            {{#each products}}
+            <div class="card">
+                <header class="card-header">
+                    <p class="card-header-title">
+                        {{product_name}}
+                    </p>
+                </header>
+                <div class="card-content">
+                    <div class="content">
+                        <figure class="image is-128x128">
+                            <img src={{ image }}>
+                        </figure>
+                        <br>
+                        <p>{{ product_name }}</p>
+                        <p>${{ price }}.00 </p>
+
+                        <br>
+                    </div>
+                </div>
+                <footer class="card-footer">
+                    <a href="#" class="card-footer-item">Save</a>
+                    <a href="#" class="card-footer-item">Buy now</a>
+
+                </footer>
+            </div>
+
+            {{/each}}
+            {{/if}}
         </div>
 
     </div>
