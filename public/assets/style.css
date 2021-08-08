@@ -3,18 +3,27 @@
     --primary-hover: gray;
 }
 
-* {
-    box-sizing: border-box;
+body {
+    min-height: 100vh;
+    min-width: 100vw;
 }
+
+/*  { 
+    box-sizing: border-box;
+}*/
 .wrapper {
     position: relative;
-min-height: 100vh;
-min-width: 100vw;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
 main{
 background-color: transparent;
 }
+
+.signup-form, .login-form{
+    padding-left: 30px;
+} 
 
 #content-wrap {
     padding-bottom: 2.5rem;    /* Footer height */
@@ -25,15 +34,17 @@ background-color: transparent;
     background-image: url("../assets/images/homepage-background.jpg") ;
     background-position: center;
     background-repeat:  no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
+    max-width: 100%;
+    height: auto;
 }
 
 .login-image {
-    background-image: url("../assets/images/astro-welcome.jpg") ;
+    background-image: url("../assets/images/astro-welcome.jpeg") ;
     background-position: center;
     background-repeat:  no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
 }
 
@@ -49,7 +60,7 @@ background-color: transparent;
     background-image: url("../assets/images/moonscape.jpg") ;
     background-position: center;
     background-repeat:  no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
 } 
 
@@ -57,7 +68,7 @@ background-color: transparent;
     background-image: url("../assets/images/alien-login.jpg") ;
     background-position: center;
     background-repeat:  no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
 }
 

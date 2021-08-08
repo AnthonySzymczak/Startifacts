@@ -17,12 +17,17 @@ In order to use this application the User must open a terminal and type "mysql -
 ## License
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ## Image
-<img src ='public\assets\images\Startifacts Website.png'>
+![screenshot](https://github.com/Mannyalfa/startifacts-group-project/blob/master/public/assets/images/Screenshot.jpg)
+
+![screenshot](https://github.com/Mannyalfa/startifacts-group-project/blob/master/public/assets/images/screenshot-login.jpg)
+
+![screenshot](https://github.com/Mannyalfa/startifacts-group-project/blob/master/public/assets/images/screenshot-shop.jpg)
+
 ## Languages/Applications
 The various libraries and languages used include Handlebars.js, MySQL, Sequelize, Node.js, and Express.js.
 ## Repository URL
-Github Repository URL: https://github.com/AnthonySzymczak/Startifacts
+https://github.com/Mannyalfa/startifacts-group-project
 ## Website
-    
+https://sheltered-springs-42021.herokuapp.com/   
 ## Credits
-This application was designed and developed by Anthony Szymczak, Austin Swebilius, Shaeon Adams, and Manny Alfaro.
+This application was designed and developed by Anthony Szymczak, Austin Swebilius, Shaeon Adams, and Manny Alfaro.# startifacts-group-project
