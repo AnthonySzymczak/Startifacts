@@ -30,7 +30,5 @@ https://github.com/AnthonySzymczak/Startifacts
 ## Website
 https://startifacts.herokuapp.com/ 
 ## Credits
-
-## Credits
 This application was designed and developed by Anthony Szymczak, Austin Swebilius, Shaeon Adams, and Manny Alfaro
 
