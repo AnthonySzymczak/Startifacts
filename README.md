@@ -26,9 +26,17 @@ In order to use this application the User must open a terminal and type "mysql -
 ## Languages/Applications
 The various libraries and languages used include Handlebars.js, MySQL, Sequelize, Node.js, and Express.js.
 ## Repository URL
+<<<<<<< HEAD
 https://github.com/AnthonySzymczak/Startifacts
 ## Website
 https://startifacts.herokuapp.com/ 
 ## Credits
 This application was designed and developed by Anthony Szymczak, Austin Swebilius, Shaeon Adams, and Manny Alfaro.# startifacts-group-project
 
+=======
+https://github.com/Mannyalfa/startifacts-group-project
+## Website
+https://sheltered-springs-42021.herokuapp.com/   
+## Credits
+This application was designed and developed by Anthony Szymczak, Austin Swebilius, Shaeon Adams, and Manny Alfaro.# startifacts-group-project
+>>>>>>> main

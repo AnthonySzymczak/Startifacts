@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Startifacts</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="/assets/style.css">
+    <script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <section class="hero is-small is-dark">
+                <!-- Hero head: will stick at the top -->
+                <header>
+                    <nav class="navbar" role="navigation" aria-label="main navigation">
+                        <div class="navbar-brand">
+                            <figure class="image is-3x1">
+                                <img src="../assets/images/start-banner.jpg">
+                            </figure>
+                            <p class="title"><i>sci-fi, anime & fantasy items</i></p>
+                        </div>
+
+                        {{#if loggedIn}}
+                        <a href="/index" class="navbar-item">Homebase</a>
+                        <a href="/shop" class="navbar-item">Boldly Go!</a>
+                        <a href="/dashboard" class="navbar-item">Area 51:Saved Items</a>
+
+                        <div class="navbar-item">
+                            <div class="buttons">
+                                <a class="button is-light" id="logout-button">Log out</a>
+                            </div>
+                            <script src="/assets/javascript/logout.js"></script>
+                            {{else}}
+                            <a href="/index" class="navbar-item">Homebase</a>
+                            <a href="/shop" class="navbar-item">Boldly Go!</a>
+                            <div class="navbar-end">
+                                <div class="navbar-item">
+                                    <div class="buttons">
+
+                                        <a href="/login" class="button is-light">
+                                            Log in
+                                        </a>
+                                        <a href="/signup" class="button is-light">
+                                            Sign up
+                                        </a>
+                                        {{/if}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    </div>
+
+    </nav>
+    </section>
+    </header>
+    <div class="content-wrap">
+        {{{body}}}
+    </div>
+    <footer class="footer has-background-black has-text-primary-light">
+        <div class="content has-text-centered is-size-7">
+            <p>Brought to you by: Anthony Szymczak, Austin Swebilius, Shaeon Adams, Manny Alfaro
+            </p>
+        </div>
+        <figure class="image is-64x64">
+            <img src="/assets/images/pangolins-noire.jpg" alt="image goes here" />
+        </figure>
+    </footer>
+    </div>
+</body>
+
+</html>

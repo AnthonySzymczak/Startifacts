@@ -18,6 +18,12 @@ Product.init(
             allowNull: false,
             autoIncrement: true
         },
+        product_image: {
+
+            type: DataTypes.STRING,
+            allowNull: false
+
+        },
         product_name: {
             type: DataTypes.STRING,
             allowNull: false

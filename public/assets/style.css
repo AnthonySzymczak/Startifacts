@@ -3,12 +3,30 @@
     --primary-hover: gray;
 }
 
-* {
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+/*  { 
     box-sizing: border-box;
+}*/
+.wrapper {
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
 main{
 background-color: transparent;
+}
+
+.signup-form, .login-form{
+    padding-left: 30px;
+} 
+
+#content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
 }
 
 
@@ -16,7 +34,41 @@ background-color: transparent;
     background-image: url("../assets/images/homepage-background.jpg") ;
     background-position: center;
     background-repeat:  no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+}
+
+.login-image {
+    background-image: url("../assets/images/astro-welcome.jpeg") ;
+    background-position: center;
+    background-repeat:  no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.shop-image {
+    background-image: url("../assets/images/star-background.jpg") ;
+    background-position: center;
+    background-repeat: repeat;
     background-attachment: fixed;
+    background-size: cover;
+}
+
+.dashboard-image {
+    background-image: url("../assets/images/moonscape.jpg") ;
+    background-position: center;
+    background-repeat:  no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+} 
+
+.signup-image {
+    background-image: url("../assets/images/alien-login.jpg") ;
+    background-position: center;
+    background-repeat:  no-repeat;
+    background-attachment: scroll;
     background-size: cover;
 }
 
@@ -26,6 +78,12 @@ html, input, textarea {
     margin: 0;
     font-family: "Arial";
     background-color: black;
+}
+
+
+
+input {
+    color: white;
 }
 
 a {
@@ -213,13 +271,19 @@ color: white ;
 }
 
 footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
     border-top: 1px solid black;
     display: flex;
     justify-content: center;
     padding: 1%;
     font-size: 110%;
-    background-color: black;
+    height: 2.5rem;
 }
+<<<<<<< HEAD
 
 /* Disable the fullhead breakpoint */
 /* $fullhd-enabled: false*/
+=======
+>>>>>>> main
