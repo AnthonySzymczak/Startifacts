@@ -32,7 +32,7 @@ The various libraries and languages used include Handlebars.js, MySQL, Sequelize
 ## Repository 
 https://github.com/AnthonySzymczak/Startifacts
 ## Website
-https://startifacts.herokuapp.com/ 
+https://startifacts-online.herokuapp.com/shop
 ## Credits
 This application was designed and developed by Anthony Szymczak, Austin Swebilius, Shaeon Adams, and Manny Alfaro
 
